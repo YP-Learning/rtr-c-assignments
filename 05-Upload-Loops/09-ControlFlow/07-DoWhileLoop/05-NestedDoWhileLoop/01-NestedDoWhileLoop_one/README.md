@@ -1,0 +1,41 @@
+# NestedDoWhileLoop_one
+
+Submitted by Yash Pravin Pawar (RTR2024-023)
+
+## Output Screenshots
+![01-output.png](./02-Screenshots/01-output.png)
+![02-output.png](./02-Screenshots/02-output.png)
+![03-output.png](./02-Screenshots/03-output.png)
+
+## Code
+### [NestedDoWhileLoop_one.c](./01-Code/NestedDoWhileLoop_one.c)
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int ypp_i, ypp_j;
+
+    printf("\n\n");
+
+    ypp_i = 1;
+    do
+    {
+        printf("i = %d\n", ypp_i);
+        printf("---------\n\n");
+
+        ypp_j = 1;
+        do
+        {
+            printf("\tj = %d\n", ypp_j);
+            ypp_j++;
+        } while (ypp_j <= 5);
+
+        ypp_i++;
+        printf("\n\n");
+    } while (ypp_i <= 10);
+
+    return (0);
+}
+
+```
